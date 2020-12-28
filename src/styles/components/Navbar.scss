@@ -1,0 +1,30 @@
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+   background-color: $black;
+   color: $white;
+   height: 80px;
+
+   @media (max-width: $breakpoint) {
+      flex-direction: column;
+      padding: 2rem 0;
+   }
+   .navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      text-decoration: none;
+      font-size: 22px;
+   }
+   .navbar-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .nav-link {
+         color: $white;
+      }
+   }
+}
